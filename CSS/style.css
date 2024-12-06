@@ -38,7 +38,12 @@ html {
   align-items: center;
 }
 
-.nav_bar {
+.main_header {
+  position: fixed;
+  z-index: 999;
+  background-image: linear-gradient(120deg, #1e1e20, #222328);
+}
+.side_bar {
   cursor: pointer;
 }
 .container .Header .links-box {
@@ -243,6 +248,7 @@ html {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 50px;
 }
 
 .bg-color-txt1 {
@@ -316,7 +322,7 @@ html {
   position: absolute;
   width: 70%;
   left: 0;
-  bottom: 10%;
+  bottom: 5%;
   color: #fff;
 }
 
