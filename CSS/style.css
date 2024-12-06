@@ -38,7 +38,9 @@ html {
     align-items: center;
 }
 
-
+.nav_bar {
+    cursor: pointer;
+}
 .container .Header .links-box {
     height: 100%;
     width: 50%;
