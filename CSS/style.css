@@ -29,7 +29,7 @@ html {
 
 .container .Header {
   height: 80px;
-  width: 100%;
+  width: 97%;
 }
 
 .display {
@@ -99,10 +99,19 @@ html {
   align-items: center;
 }
 .social-links-a {
+  padding-right: 20px;
   text-decoration: none;
 }
 .social-links-a:hover {
   color: #6ef3a5;
+}
+
+.nav-btn {
+  padding-right: 20px;
+}
+
+.nav-btn-a {
+  padding-right: 20px;
 }
 
 .container .Header .social-media-links .social-media-links-box li {
@@ -392,7 +401,7 @@ html {
 }
 
 #works .center-box .center-box-left-child .project-box {
-  width: 100%;
+  
   /* background: black; */
   padding: 2vmax;
   border-radius: 7px;
