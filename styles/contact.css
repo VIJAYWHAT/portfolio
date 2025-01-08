@@ -1,0 +1,27 @@
+/* Contact Page Navbar Override */
+.nav-container {
+  justify-content: center !important;
+}
+
+.nav-logo {
+  position: static !important;
+  margin: 0 !important;
+}
+
+.nav-logo-link {
+  text-align: center !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 80%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  transition: all 0.3s ease !important;
+  text-align: center !important;
+}
+
+.nav-logo-link:hover {
+  transform: scale(1.05) !important;
+  filter: brightness(1.2) !important;
+}
