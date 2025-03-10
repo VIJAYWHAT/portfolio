@@ -1,123 +1,174 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Header */
-  header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    font-weight: 600;
-  }
-  
-  /* Sections */
-  .section {
-    padding: 60px 0;
-  }
-  
-  .section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  /* Skills Grid */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-  }
-  
-  .skill {
-    background: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Projects Grid */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .project {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  /* Timeline */
-  .timeline {
-    position: relative;
-    padding-left: 20px;
-  }
-  
-  .timeline-item {
-    margin-bottom: 40px;
-  }
-  
-  .timeline-item h3 {
-    margin: 0;
-  }
-  
-  .timeline-item .date {
-    color: #777;
-    font-size: 14px;
-  }
-  
-  /* Footer */
-  footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero .highlight {
+  color: #ffd700;
+}
+
+.hero .tagline {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background: #ffd700;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-card i {
+  font-size: 40px;
+  color: #6a11cb;
+  margin-bottom: 20px;
+}
+
+.skill-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #777;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.project-card p {
+  margin: 0 20px 20px;
+  color: #777;
+}
+
+.project-card .btn {
+  display: block;
+  text-align: center;
+  background: #6a11cb;
+  color: #fff;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

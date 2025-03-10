@@ -5,56 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
-      <h1>Your Name</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#creations">Creations</a></li>
-          <li><a href="#open-source">Open Source</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I'm [Your Name], a passionate [Your Profession] with expertise in [Your Skills]. I love building innovative solutions and contributing to open-source projects.</p>
-    </div>
-  </section>
-
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">Git</div>
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Vijay Raja</span></h1>
+        <p class="tagline">A passionate open-source Developer specializing in Python.</p>
+        <a href="#about" class="btn">Learn More</a>
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>Hello! I'm Vijay Raja, a [Your Profession] with expertise in [Your Skills]. I love building innovative solutions and contributing to open-source projects. Let's create something amazing together!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React, Node.js</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-palette"></i>
+          <h3>UI/UX Design</h3>
+          <p>Figma, Adobe XD, Prototyping</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>Database Management</h3>
+          <p>MySQL, MongoDB, Firebase</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Creations Section -->
   <section id="creations" class="section">
     <div class="container">
       <h2>Creations</h2>
       <div class="projects-grid">
-        <div class="project">
+        <div class="project-card">
+          <img src="assets/images/project1.jpg" alt="Project 1">
           <h3>Project 1</h3>
           <p>Description of Project 1.</p>
           <a href="#" class="btn">View Project</a>
         </div>
-        <div class="project">
+        <div class="project-card">
+          <img src="assets/images/project2.jpg" alt="Project 2">
           <h3>Project 2</h3>
           <p>Description of Project 2.</p>
           <a href="#" class="btn">View Project</a>
@@ -63,17 +75,21 @@
     </div>
   </section>
 
+  <!-- Open Source Section -->
   <section id="open-source" class="section">
     <div class="container">
       <h2>Open Source</h2>
-      <p>I actively contribute to open-source projects. Here are some of my contributions:</p>
-      <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-      </ul>
+      <div class="open-source-content">
+        <p>I actively contribute to open-source projects. Here are some of my contributions:</p>
+        <ul>
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
+  <!-- Experience Section -->
   <section id="experience" class="section">
     <div class="container">
       <h2>Experience</h2>
@@ -92,6 +108,7 @@
     </div>
   </section>
 
+  <!-- Education Section -->
   <section id="education" class="section">
     <div class="container">
       <h2>Education</h2>
@@ -103,9 +120,15 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2023 Your Name. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
   </footer>
 
