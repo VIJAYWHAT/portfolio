@@ -1,220 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hey dont take chap bro every thing is ok</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <script
-      src="https://kit.fontawesome.com/68899938a9.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./CSS/Media/responsive.css" />
-    <link rel="icon" href="./Image/fav-icon.png" />
-  </head>
-  <body>
-    <div class="container" id="home">
-      <div class="Header display main_header" id="nav">
-        <div class="links-box display">
-          <h1 class="logo">Techie Vj</h1>
-          <ul class="links-box-child display hide-on-pc">
-            <li class="links-item"><a href="#home"> < Services ></a></li>
-            <li class="links-item"><a href="#works"> < Works ></a></li>
-            <li class="links-item"><a href="#notes"> < Notes ></a></li>
-            <li class="links-item"><a href="#contact"> < Contact ></a></li>
-            <i
-              class="fa-regular fa-circle-xmark popupCut Cancel_Button"
-              id="cancelIcon"
-            ></i>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#creations">Creations</a></li>
+          <li><a href="#open-source">Open Source</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="social-media-links">
-          <ul class="social-media-links-box display">
-            <a
-              class="social-links-a"
-              href="mailto:vijayrv042@gmail.com?subject = Feedback&body = Message"
-              target="_blank"
-            >
-              <li class="social-links">
-                <span><i class="fa-solid fa-envelope"></i></span>gmail
-              </li>
-            </a>
-            <a
-              class="social-links-a"
-              href="https://www.linkedin.com/in/vijay-raja-7a1852241/"
-              target="_blank"
-            >
-              <li class="social-links">
-                <span><i class="fa-brands fa-linkedin-in"></i></span>linkedin
-              </li>
-            </a>
-            <a
-              class="social-links-a"
-              href="https://github.com/VIJAYWHAT"
-              target="_blank"
-            >
-              <li class="social-links">
-                <span><i class="fa-brands fa-github"></i></span>github
-              </li>
-            </a>
-            <a class="social-links-a nav-btn">
-              <li class="social-links">
-                <span
-                  ><i class="fa-solid fa-bars hide"
-                    >&emsp;&emsp;&emsp;&emsp;</i
-                  ></span
-                >
-              </li>
-            </a>
-          </ul>
-        </div>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm [Your Name], a passionate [Your Profession] with expertise in [Your Skills]. I love building innovative solutions and contributing to open-source projects.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Git</div>
       </div>
+    </div>
+  </section>
 
-      <div class="center-box">
-        <div class="center-box-leftchild">
-          <div class="center-box-leftchid-content">
-            <div class="Heading">
-              <h2 class="bg-color-txt1">Back-End Developer</h2>
-              <h2 class="bg-color-txt2">Cyber Security Expert</h2>
-            </div>
-            <h1 class="main-txt">Don't hate the Hacker.</h1>
-            <h1 class="main-txt">Hate the Code.</h1>
-
-            <p class="light-txt-info">
-              I crack and code the beautifully thing. <br />
-              and i love what i do.
-            </p>
-            <div class="btn-box">
-              <a href="#works" class="btn-box-child" REFL-TEXT="see my works"
-                >see my works!</a
-              >
-            </div>
-          </div>
-          <div class="experience-box display">
-            <div class="expreience-box-left-child">
-              <span class="number">03</span>
-              <span class="text-box">
-                <p>
-                  years of <br />
-                  experience
-                </p>
-              </span>
-            </div>
-            <div class="expreience-box-right-child">
-              <span class="number">10 < </span>
-              <span class="text-box">
-                <p>
-                  projects <br />
-                  created
-                </p>
-              </span>
-            </div>
-          </div>
+  <section id="creations" class="section">
+    <div class="container">
+      <h2>Creations</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Description of Project 1.</p>
+          <a href="#" class="btn">View Project</a>
         </div>
-        <div class="center-box-rightchild">
-          <div class="background-cover"></div>
-          <div class="circle">
-            <img class="kali_symbol" src="./Image/download.png" alt="react" />
-          </div>
-          <div class="circle2">
-            <img
-              class="cyber_man"
-              src="./Image/cyber_man.svg"
-              alt="cyber_man"
-            />
-          </div>
-          <div class="circle3">
-            <img class="python-image" src="./Image/python.png" alt="python" />
-          </div>
-          <img src="./Image/img1.png" class="home-img" />
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+          <a href="#" class="btn">View Project</a>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="container" id="works">
-      <div class="center-box">
-        <div class="center-box-left-child">
-          <div class="project-box">
-            <div class="project-heading-txt-box">
-              <h2 class="heading-txt">Project Creations</h2>
-              <i class="fa-brands fa-figma"></i>
-            </div>
-            <p class="project-info-txt">
-              Create digital product with unique ideas
-            </p>
-            <div class="project-btn-box">
-              <a
-                href="https://vijaywhat.github.io/#creations"
-                class="project-btn"
-                REFL-TEXT="see my works"
-                >4 projects</a
-              >
-            </div>
-          </div>
-          <div class="project-box">
-            <div class="project-heading-txt-box">
-              <h2 class="heading-txt">Presentations</h2>
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <p class="project-info-txt">
-              Inspire action with impactful and clear presentations
-            </p>
-            <div class="project-btn-box">
-              <a
-                href="https://vijaywhat.github.io/#publications"
-                class="project-btn"
-                REFL-TEXT="see my works"
-                >2 Presentations</a
-              >
-            </div>
-          </div>
-          <div class="project-box">
-            <div class="project-heading-txt-box">
-              <h2 class="heading-txt">Open Source Contributions</h2>
-              <i class="fa-brands fa-figma"></i>
-            </div>
-            <p class="project-info-txt">
-              Driving innovation through meaningful open-source
-            </p>
-            <div class="project-btn-box">
-              <a
-                href="https://vijaywhat.github.io/#contributions"
-                class="project-btn"
-                REFL-TEXT="see my works"
-                >4 Contributions</a
-              >
-            </div>
-          </div>
+  <section id="open-source" class="section">
+    <div class="container">
+      <h2>Open Source</h2>
+      <p>I actively contribute to open-source projects. Here are some of my contributions:</p>
+      <ul>
+        <li><a href="#">Project 1</a></li>
+        <li><a href="#">Project 2</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Job Title - Company</h3>
+          <p class="date">Jan 2022 - Present</p>
+          <p>Description of your role and achievements.</p>
         </div>
-        <div class="center-box-right-child">
-          <p class="header-txt">Introduction</p>
-          <h1 class="brand-txt">Hello! I'M &emsp; &emsp; &emsp; Vijay Raja</h1>
-          <h3 class="sub-brand-txt">
-            Privacy – like eating and breathing – is one of life’s basic
-            requirements
-          </h3>
-          <p class="brand-info">
-            Hi, My name is Vijay. I am from Ramanathapuram, Tamilnadu, India. I
-            am a Cyber Security Expert and back-end developer and also a collage
-            student. I was completed my schooling at Govt Hr Sec School,
-            Irumeni.Currently i am pursing Bsc(CS) from SRMV CAS, Coimbatore.
-            <span>Check out my projects.</span>
-          </p>
+        <div class="timeline-item">
+          <h3>Job Title - Company</h3>
+          <p class="date">Jan 2020 - Dec 2021</p>
+          <p>Description of your role and achievements.</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <footer>Copyright © 2024 Techie Vj Archives. All Rights Reserved.</footer>
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Degree - University</h3>
+        <p class="date">2016 - 2020</p>
+        <p>Description of your education.</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap-trial@3.12.4/ScrollTrigger.min.js"></script>
-    <script src="../JS/index.js"></script>
-    <script src="./JS/dom.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
-
-
