@@ -137,12 +137,24 @@
   }
 
   .skills-categories {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+    padding: var(--spacing-xl) 0;
+  }
+
+  .skills-categories .space-y-10 > * + * {
+    margin-top: var(--spacing-xl);
+  }
+
+  .skill-category h3 {
+    font-size: 1.125rem;
   }
 
   .skills-list {
-    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .skill-tag {
+    font-size: 0.8125rem;
+    padding: 6px var(--spacing-sm);
   }
 
   /* Modal adjustments */
@@ -237,7 +249,11 @@
   }
 
   .skills-categories {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: var(--spacing-xl) 0;
+  }
+
+  .skills-categories .space-y-10 > * + * {
+    margin-top: var(--spacing-xl);
   }
 }
 
