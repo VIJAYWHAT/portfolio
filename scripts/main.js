@@ -229,6 +229,7 @@ class PortfolioApp {
                         ${project.liveUrl ? `<a href="${project.liveUrl}" class="project-link" target="_blank">Live Demo</a>` : ''}
                         ${project.githubUrl ? `<a href="${project.githubUrl}" class="project-link" target="_blank">GitHub</a>` : ''}
                         <button class="project-link view-details" onclick="portfolioApp.showProjectDetails(${project.id})">View Details</button>
+                        <a href="project-detail.html?id=${project.id}&type=project" class="project-link">View Details</a>
                     </div>
                 </div>
             `).join('');
@@ -349,7 +350,7 @@ class PortfolioApp {
                         <a href="${blog.url}" class="project-link" target="_blank">
                             ${blog.type === 'presentation' ? 'View Slides' : 'Read More'}
                         </a>
-                        <button class="project-link view-details" onclick="portfolioApp.showBlogDetails(${blog.id})">View Details</button>
+                        <a href="blog-detail.html?id=${blog.id}&type=blog" class="project-link">View Details</a>
                     </div>
                 </div>
             `).join('');
@@ -558,122 +559,6 @@ class PortfolioApp {
         }
     }
 
-    showProjectDetails(projectId) {
-        const project = window.portfolioData.projects.find(p => p.id === projectId);
-        if (!project) return;
-
-        const modalBody = document.getElementById('modal-body');
-        modalBody.innerHTML = `
-            <div class="detail-header">
-                <h2>${project.title}</h2>
-                <div class="project-tech">
-                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                </div>
-            </div>
-            <div class="detail-content">
-                <div class="project-image">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="detail-section">
-                    <h3>Project Overview</h3>
-                    <p>${project.description}</p>
-                </div>
-                ${project.challenges ? `
-                    <div class="detail-section">
-                        <h3>Challenges</h3>
-                        <ul>
-                            ${project.challenges.map(challenge => `<li>${challenge}</li>`).join('')}
-                        </ul>
-                    </div>
-                ` : ''}
-                ${project.outcomes ? `
-                    <div class="detail-section">
-                        <h3>Outcomes & Impact</h3>
-                        <ul>
-                            ${project.outcomes.map(outcome => `<li>${outcome}</li>`).join('')}
-                        </ul>
-                    </div>
-                ` : ''}
-                <div class="detail-section">
-                    <h3>Technologies Used</h3>
-                    <div class="tech-grid">
-                        ${project.technologies.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
-                    </div>
-                </div>
-                <div class="detail-actions">
-                    ${project.liveUrl ? `<a href="${project.liveUrl}" class="btn btn-primary" target="_blank">Live Demo</a>` : ''}
-                    ${project.githubUrl ? `<a href="${project.githubUrl}" class="btn btn-outline" target="_blank">View Code</a>` : ''}
-                </div>
-            </div>
-        `;
-        
-        document.getElementById('detail-modal').classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-
-    showBlogDetails(blogId) {
-        const blog = window.portfolioData.blogs.find(b => b.id === blogId);
-        if (!blog) return;
-
-        const modalBody = document.getElementById('modal-body');
-        modalBody.innerHTML = `
-            <div class="detail-header">
-                <h2>${blog.title}</h2>
-                <div class="blog-meta">
-                    <span class="blog-date">${blog.date}</span>
-                    ${blog.readTime ? `<span class="blog-read-time">${blog.readTime} min read</span>` : ''}
-                    ${blog.audience ? `<span class="blog-audience">${blog.audience} attendees</span>` : ''}
-                </div>
-            </div>
-            <div class="detail-content">
-                <div class="blog-image">
-                    <i class="fas ${blog.type === 'presentation' ? 'fa-presentation' : 'fa-blog'}"></i>
-                </div>
-                <div class="detail-section">
-                    <h3>${blog.type === 'presentation' ? 'Presentation' : 'Blog Post'} Overview</h3>
-                    <p>${blog.excerpt}</p>
-                </div>
-                ${blog.venue ? `
-                    <div class="detail-section">
-                        <h3>Event Details</h3>
-                        <p><strong>Venue:</strong> ${blog.venue}</p>
-                        ${blog.audience ? `<p><strong>Audience:</strong> ${blog.audience} attendees</p>` : ''}
-                        ${blog.duration ? `<p><strong>Duration:</strong> ${blog.duration}</p>` : ''}
-                    </div>
-                ` : ''}
-                ${blog.feedback ? `
-                    <div class="detail-section">
-                        <h3>Feedback & Impact</h3>
-                        <p><strong>Rating:</strong> ${blog.feedback.rating}/5 (${blog.feedback.totalResponses} responses)</p>
-                        <div class="feedback-comments">
-                            ${blog.feedback.comments.map(comment => `<blockquote>"${comment}"</blockquote>`).join('')}
-                        </div>
-                    </div>
-                ` : ''}
-                <div class="detail-section">
-                    <h3>Tags</h3>
-                    <div class="tech-grid">
-                        ${blog.tags.map(tag => `<span class="tech-badge">${tag}</span>`).join('')}
-                    </div>
-                </div>
-                <div class="detail-actions">
-                    <a href="${blog.url}" class="btn btn-primary" target="_blank">
-                        ${blog.type === 'presentation' ? 'View Slides' : 'Read Full Post'}
-                    </a>
-                    ${blog.video ? `<a href="${blog.video}" class="btn btn-outline" target="_blank">Watch Video</a>` : ''}
-                    ${blog.code ? `<a href="${blog.code}" class="btn btn-outline" target="_blank">View Code</a>` : ''}
-                </div>
-            </div>
-        `;
-        
-        document.getElementById('detail-modal').classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-
-    closeDetailModal() {
-        document.getElementById('detail-modal').classList.remove('active');
-        document.body.style.overflow = '';
-    }
 }
 
 // Initialize the app when DOM is loaded
