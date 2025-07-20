@@ -123,53 +123,52 @@ window.portfolioData = {
 
     // Technical skills organized by categories
     skills: {
+        "Cyber Security Researching": [
+            "Penetration Testing",
+            "Vulnerability Assessment",
+            "Security Auditing",
+            "Threat Analysis"
+        ],
+        "DataBase Management": [
+            "Microsoft SQL Server",
+            "MySQL",
+            "PostgreSQL"
+        ],
         "Programming Languages": [
-            { name: "JavaScript", level: 5 },
-            { name: "TypeScript", level: 4 },
-            { name: "Python", level: 4 },
-            { name: "Java", level: 3 },
-            { name: "PHP", level: 3 },
-            { name: "Go", level: 2 }
+            "C",
+            "C++",
+            ".Net and C#",
+            "Java",
+            "Python",
+            "PHP",
+            "Flutter",
+            "Bash",
+            "Joget",
+            "Markdown",
+            "KaTeX"
         ],
-        "Frontend Technologies": [
-            { name: "React", level: 5 },
-            { name: "Vue.js", level: 4 },
-            { name: "Angular", level: 3 },
-            { name: "HTML5", level: 5 },
-            { name: "CSS3", level: 5 },
-            { name: "Sass/SCSS", level: 4 },
-            { name: "Tailwind CSS", level: 5 },
-            { name: "Bootstrap", level: 4 }
+        "UI/UX": [
+            "HTML 5",
+            "CSS 3",
+            "Bootstrap",
+            "Dart",
+            "Figma",
+            "Illustrator"
         ],
-        "Backend Technologies": [
-            { name: "Node.js", level: 5 },
-            { name: "Express.js", level: 5 },
-            { name: "Django", level: 3 },
-            { name: "FastAPI", level: 3 },
-            { name: "GraphQL", level: 4 },
-            { name: "REST APIs", level: 5 }
+        "Methodology": [
+            "Agile",
+            "Waterfall",
+            "Kanban"
         ],
-        "Databases": [
-            { name: "MongoDB", level: 4 },
-            { name: "PostgreSQL", level: 4 },
-            { name: "MySQL", level: 4 },
-            { name: "Redis", level: 3 },
-            { name: "Firebase", level: 3 }
-        ],
-        "Tools & Technologies": [
-            { name: "Git", level: 5 },
-            { name: "Docker", level: 4 },
-            { name: "AWS", level: 3 },
-            { name: "Webpack", level: 4 },
-            { name: "Jest", level: 4 },
-            { name: "Cypress", level: 3 }
+        "Tools & Operating Systems": [
+            "Git",
+            "Docker",
+            "Linux"
         ],
         "Soft Skills": [
-            { name: "Problem Solving", level: 5 },
-            { name: "Team Leadership", level: 4 },
-            { name: "Communication", level: 5 },
-            { name: "Project Management", level: 4 },
-            { name: "Mentoring", level: 4 }
+            "Problem Solving",
+            "Team Leadership",
+            "Communication"
         ]
     },
 
