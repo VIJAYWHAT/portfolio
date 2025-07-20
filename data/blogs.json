@@ -1,0 +1,241 @@
+[
+  {
+    "id": 1,
+    "title": "Building Scalable React Applications: Best Practices and Patterns",
+    "slug": "scalable-react-applications",
+    "excerpt": "A comprehensive guide to building maintainable and scalable React applications with modern patterns and best practices.",
+    "content": "Learn how to structure your React applications for long-term maintainability and scalability...",
+    "date": "2024-02-15",
+    "publishedAt": "2024-02-15T10:00:00Z",
+    "updatedAt": "2024-02-15T10:00:00Z",
+    "readTime": 12,
+    "url": "https://blog.johndoe.dev/scalable-react-applications",
+    "tags": ["React", "JavaScript", "Architecture", "Best Practices"],
+    "category": "tutorial",
+    "type": "blog",
+    "featured": true,
+    "views": 1250,
+    "likes": 89,
+    "comments": 23,
+    "author": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "avatar": "/images/author.jpg"
+    },
+    "seoMetadata": {
+      "metaTitle": "Building Scalable React Applications: Best Practices and Patterns",
+      "metaDescription": "Learn modern patterns and best practices for building maintainable and scalable React applications.",
+      "keywords": ["React", "JavaScript", "Architecture", "Best Practices", "Scalability"],
+      "ogImage": "/images/blog/react-scalability.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "title": "The Future of Web Development: Trends to Watch in 2024",
+    "slug": "web-development-trends-2024",
+    "excerpt": "Exploring emerging trends in web development including AI integration, WebAssembly, and progressive web apps.",
+    "content": "The web development landscape is constantly evolving. Here are the key trends shaping the future...",
+    "date": "2024-01-20",
+    "publishedAt": "2024-01-20T14:30:00Z",
+    "updatedAt": "2024-01-20T14:30:00Z",
+    "readTime": 8,
+    "url": "https://blog.johndoe.dev/web-development-trends-2024",
+    "tags": ["Web Development", "Trends", "AI", "PWA"],
+    "category": "industry",
+    "type": "blog",
+    "featured": true,
+    "views": 2100,
+    "likes": 156,
+    "comments": 45,
+    "author": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "avatar": "/images/author.jpg"
+    },
+    "seoMetadata": {
+      "metaTitle": "The Future of Web Development: Trends to Watch in 2024",
+      "metaDescription": "Discover emerging trends in web development including AI integration, WebAssembly, and progressive web apps.",
+      "keywords": ["Web Development", "2024 Trends", "AI", "WebAssembly", "PWA"],
+      "ogImage": "/images/blog/web-trends-2024.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Optimizing Node.js Performance: Tips and Techniques",
+    "slug": "nodejs-performance-optimization",
+    "excerpt": "Learn how to identify performance bottlenecks and optimize your Node.js applications for better speed and efficiency.",
+    "content": "Performance optimization is crucial for Node.js applications. Here's how to make your apps faster...",
+    "date": "2023-12-10",
+    "publishedAt": "2023-12-10T09:15:00Z",
+    "updatedAt": "2023-12-10T09:15:00Z",
+    "readTime": 15,
+    "url": "https://blog.johndoe.dev/nodejs-performance-optimization",
+    "tags": ["Node.js", "Performance", "Backend", "Optimization"],
+    "category": "tutorial",
+    "type": "blog",
+    "featured": false,
+    "views": 890,
+    "likes": 67,
+    "comments": 18,
+    "author": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "avatar": "/images/author.jpg"
+    },
+    "series": {
+      "name": "Node.js Mastery",
+      "part": 3,
+      "totalParts": 5
+    }
+  },
+  {
+    "id": 4,
+    "title": "Introduction to GraphQL for REST API Developers",
+    "slug": "graphql-for-rest-developers",
+    "excerpt": "A practical guide for developers transitioning from REST APIs to GraphQL, covering key concepts and implementation strategies.",
+    "content": "If you're coming from REST APIs, GraphQL might seem different. Let's explore the key concepts...",
+    "date": "2023-11-05",
+    "publishedAt": "2023-11-05T11:00:00Z",
+    "updatedAt": "2023-11-05T11:00:00Z",
+    "readTime": 10,
+    "url": "https://blog.johndoe.dev/graphql-for-rest-developers",
+    "tags": ["GraphQL", "APIs", "Backend", "Tutorial"],
+    "category": "tutorial",
+    "type": "blog",
+    "featured": false,
+    "views": 1450,
+    "likes": 98,
+    "comments": 32,
+    "author": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "avatar": "/images/author.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Modern Frontend Development with React and TypeScript",
+    "slug": "react-typescript-best-practices",
+    "excerpt": "Best practices for combining React with TypeScript to build type-safe and maintainable frontend applications.",
+    "content": "TypeScript adds powerful type safety to React applications. Here's how to use them together effectively...",
+    "date": "2023-09-15",
+    "publishedAt": "2023-09-15T13:45:00Z",
+    "updatedAt": "2023-09-15T13:45:00Z",
+    "readTime": 14,
+    "url": "https://blog.johndoe.dev/react-typescript-best-practices",
+    "tags": ["React", "TypeScript", "Frontend", "Development"],
+    "category": "tutorial",
+    "type": "blog",
+    "featured": true,
+    "views": 1780,
+    "likes": 134,
+    "comments": 56,
+    "author": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "avatar": "/images/author.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Building Scalable Web Applications - Tech Talk at DevConf 2024",
+    "slug": "scalable-web-apps-devconf2024",
+    "excerpt": "Presented architectural patterns and strategies for building scalable web applications to an audience of 200+ developers.",
+    "content": "Slides and resources from my presentation on building scalable web applications...",
+    "date": "2024-03-10",
+    "publishedAt": "2024-03-10T16:00:00Z",
+    "updatedAt": "2024-03-10T16:00:00Z",
+    "audience": 200,
+    "duration": "45 minutes",
+    "url": "https://slides.com/johndoe/scalable-web-apps-devconf2024",
+    "venue": "DevConf 2024, San Francisco",
+    "tags": ["Architecture", "Scalability", "Web Development", "Speaking"],
+    "category": "conference",
+    "type": "presentation",
+    "featured": true,
+    "slides": "https://slides.com/johndoe/scalable-web-apps-devconf2024",
+    "video": "https://youtube.com/watch?v=scalable-web-apps",
+    "feedback": {
+      "rating": 4.8,
+      "totalResponses": 156,
+      "comments": [
+        "Excellent presentation with practical examples",
+        "Great insights into microservices architecture",
+        "Very well structured and easy to follow"
+      ]
+    },
+    "conference": {
+      "name": "DevConf 2024",
+      "location": "San Francisco, CA",
+      "website": "https://devconf2024.com",
+      "attendees": 1500
+    }
+  },
+  {
+    "id": 7,
+    "title": "React Performance Optimization - Workshop at ReactMeetup",
+    "slug": "react-performance-workshop",
+    "excerpt": "Conducted a hands-on workshop on React performance optimization techniques for the local React developer community.",
+    "content": "Workshop materials and code examples for React performance optimization...",
+    "date": "2023-10-25",
+    "publishedAt": "2023-10-25T18:30:00Z",
+    "updatedAt": "2023-10-25T18:30:00Z",
+    "audience": 50,
+    "duration": "2 hours",
+    "url": "https://slides.com/johndoe/react-performance-workshop",
+    "venue": "React Meetup SF",
+    "tags": ["React", "Performance", "Workshop", "Community"],
+    "category": "workshop",
+    "type": "presentation",
+    "featured": false,
+    "slides": "https://slides.com/johndoe/react-performance-workshop",
+    "code": "https://github.com/johndoe/react-performance-workshop",
+    "feedback": {
+      "rating": 4.9,
+      "totalResponses": 42,
+      "comments": [
+        "Very hands-on and practical",
+        "Learned a lot about React optimization",
+        "Great examples and exercises"
+      ]
+    },
+    "meetup": {
+      "name": "React San Francisco",
+      "website": "https://www.meetup.com/react-sf",
+      "memberCount": 3500
+    }
+  },
+  {
+    "id": 8,
+    "title": "From Monolith to Microservices - Lessons Learned",
+    "slug": "monolith-to-microservices",
+    "excerpt": "Shared experiences and lessons learned from migrating a monolithic application to a microservices architecture.",
+    "content": "Key takeaways from our journey of migrating from monolith to microservices...",
+    "date": "2023-08-20",
+    "publishedAt": "2023-08-20T19:00:00Z",
+    "updatedAt": "2023-08-20T19:00:00Z",
+    "audience": 150,
+    "duration": "30 minutes",
+    "url": "https://slides.com/johndoe/monolith-to-microservices",
+    "venue": "TechTalk San Francisco",
+    "tags": ["Microservices", "Architecture", "Migration", "Lessons"],
+    "category": "tech-talk",
+    "type": "presentation",
+    "featured": false,
+    "slides": "https://slides.com/johndoe/monolith-to-microservices",
+    "feedback": {
+      "rating": 4.6,
+      "totalResponses": 89,
+      "comments": [
+        "Very honest about the challenges",
+        "Great practical advice",
+        "Helpful for our own migration"
+      ]
+    },
+    "event": {
+      "name": "TechTalk San Francisco",
+      "website": "https://techtalk-sf.com",
+      "series": "Monthly Tech Talks"
+    }
+  }
+]

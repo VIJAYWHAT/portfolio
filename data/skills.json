@@ -1,0 +1,230 @@
+{
+  "Programming Languages": [
+    {
+      "name": "JavaScript",
+      "level": 5,
+      "yearsOfExperience": 4,
+      "description": "Expert in ES6+, async/await, closures, and modern JavaScript patterns"
+    },
+    {
+      "name": "TypeScript",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Strong experience with type systems, interfaces, and advanced TypeScript features"
+    },
+    {
+      "name": "Python",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Proficient in Django, FastAPI, data analysis, and automation scripts"
+    },
+    {
+      "name": "Java",
+      "level": 3,
+      "yearsOfExperience": 2,
+      "description": "Experience with Spring Boot, JPA, and enterprise Java applications"
+    },
+    {
+      "name": "PHP",
+      "level": 3,
+      "yearsOfExperience": 2,
+      "description": "Experience with Laravel, WordPress development, and legacy PHP systems"
+    },
+    {
+      "name": "Go",
+      "level": 2,
+      "yearsOfExperience": 1,
+      "description": "Basic experience with Go for microservices and API development"
+    }
+  ],
+  "Frontend Technologies": [
+    {
+      "name": "React",
+      "level": 5,
+      "yearsOfExperience": 4,
+      "description": "Expert in hooks, context, Redux, Next.js, and React ecosystem"
+    },
+    {
+      "name": "Vue.js",
+      "level": 4,
+      "yearsOfExperience": 2,
+      "description": "Strong experience with Vue 3, Vuex, Nuxt.js, and composition API"
+    },
+    {
+      "name": "Angular",
+      "level": 3,
+      "yearsOfExperience": 1,
+      "description": "Experience with Angular 12+, TypeScript, RxJS, and component architecture"
+    },
+    {
+      "name": "HTML5",
+      "level": 5,
+      "yearsOfExperience": 5,
+      "description": "Expert in semantic HTML, accessibility, and modern HTML5 APIs"
+    },
+    {
+      "name": "CSS3",
+      "level": 5,
+      "yearsOfExperience": 5,
+      "description": "Expert in Flexbox, Grid, animations, and responsive design patterns"
+    },
+    {
+      "name": "Sass/SCSS",
+      "level": 4,
+      "yearsOfExperience": 4,
+      "description": "Advanced usage of mixins, functions, and architecture patterns"
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 5,
+      "yearsOfExperience": 3,
+      "description": "Expert in utility-first approach, custom configurations, and component patterns"
+    },
+    {
+      "name": "Bootstrap",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Strong experience with customization, theming, and responsive utilities"
+    }
+  ],
+  "Backend Technologies": [
+    {
+      "name": "Node.js",
+      "level": 5,
+      "yearsOfExperience": 4,
+      "description": "Expert in Express.js, async patterns, streams, and Node.js ecosystem"
+    },
+    {
+      "name": "Express.js",
+      "level": 5,
+      "yearsOfExperience": 4,
+      "description": "Expert in middleware, routing, authentication, and API development"
+    },
+    {
+      "name": "Django",
+      "level": 3,
+      "yearsOfExperience": 2,
+      "description": "Experience with ORM, admin interface, and REST framework"
+    },
+    {
+      "name": "FastAPI",
+      "level": 3,
+      "yearsOfExperience": 1,
+      "description": "Experience with async Python, automatic documentation, and type hints"
+    },
+    {
+      "name": "GraphQL",
+      "level": 4,
+      "yearsOfExperience": 2,
+      "description": "Strong experience with schema design, resolvers, and Apollo Server/Client"
+    },
+    {
+      "name": "REST APIs",
+      "level": 5,
+      "yearsOfExperience": 4,
+      "description": "Expert in API design, documentation, versioning, and best practices"
+    }
+  ],
+  "Databases": [
+    {
+      "name": "MongoDB",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Strong experience with aggregation, indexing, and schema design"
+    },
+    {
+      "name": "PostgreSQL",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Advanced SQL queries, stored procedures, and database optimization"
+    },
+    {
+      "name": "MySQL",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Experience with complex queries, database design, and performance tuning"
+    },
+    {
+      "name": "Redis",
+      "level": 3,
+      "yearsOfExperience": 2,
+      "description": "Experience with caching, sessions, and real-time applications"
+    },
+    {
+      "name": "Firebase",
+      "level": 3,
+      "yearsOfExperience": 2,
+      "description": "Experience with Firestore, Authentication, and real-time features"
+    }
+  ],
+  "Tools & Technologies": [
+    {
+      "name": "Git",
+      "level": 5,
+      "yearsOfExperience": 5,
+      "description": "Expert in version control, branching strategies, and collaborative workflows"
+    },
+    {
+      "name": "Docker",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Strong experience with containerization, Docker Compose, and deployment"
+    },
+    {
+      "name": "AWS",
+      "level": 3,
+      "yearsOfExperience": 2,
+      "description": "Experience with EC2, S3, Lambda, RDS, and cloud architecture"
+    },
+    {
+      "name": "Webpack",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Advanced configuration, optimization, and build process customization"
+    },
+    {
+      "name": "Jest",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Strong experience with unit testing, mocking, and test-driven development"
+    },
+    {
+      "name": "Cypress",
+      "level": 3,
+      "yearsOfExperience": 2,
+      "description": "Experience with end-to-end testing, visual testing, and CI/CD integration"
+    }
+  ],
+  "Soft Skills": [
+    {
+      "name": "Problem Solving",
+      "level": 5,
+      "yearsOfExperience": 5,
+      "description": "Excellent analytical thinking and systematic approach to complex problems"
+    },
+    {
+      "name": "Team Leadership",
+      "level": 4,
+      "yearsOfExperience": 2,
+      "description": "Experience leading development teams and mentoring junior developers"
+    },
+    {
+      "name": "Communication",
+      "level": 5,
+      "yearsOfExperience": 5,
+      "description": "Strong verbal and written communication with technical and non-technical stakeholders"
+    },
+    {
+      "name": "Project Management",
+      "level": 4,
+      "yearsOfExperience": 3,
+      "description": "Experience with Agile methodologies, sprint planning, and project delivery"
+    },
+    {
+      "name": "Mentoring",
+      "level": 4,
+      "yearsOfExperience": 2,
+      "description": "Passionate about helping others grow and sharing knowledge with the community"
+    }
+  ]
+}

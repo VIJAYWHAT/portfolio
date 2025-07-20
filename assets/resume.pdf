@@ -1,0 +1,17 @@
+# Resume Placeholder
+
+This is a placeholder for the actual resume PDF file.
+
+In a real implementation, this would be a PDF file containing:
+- Contact information
+- Professional summary
+- Work experience
+- Education
+- Skills
+- Projects
+- Certifications
+
+To add an actual resume:
+1. Create or export your resume as a PDF
+2. Replace this placeholder file with your actual resume.pdf
+3. Ensure the file path matches the download link in the HTML

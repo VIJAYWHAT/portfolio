@@ -1,0 +1,150 @@
+[
+  {
+    "degree": "Bachelor of Science in Computer Science",
+    "institution": "University of California, Berkeley",
+    "location": "Berkeley, CA",
+    "duration": "2016 - 2020",
+    "cgpa": "3.8/4.0",
+    "description": "Focused on software engineering, algorithms, and data structures. Completed coursework in web development, database systems, and machine learning.",
+    "achievements": [
+      "Dean's List for 6 consecutive semesters",
+      "President of Computer Science Student Association",
+      "Winner of Annual Hackathon (2019)",
+      "Teaching Assistant for Data Structures course",
+      "Graduated Magna Cum Laude"
+    ],
+    "courses": [
+      {
+        "name": "Data Structures and Algorithms",
+        "code": "CS 61B",
+        "credits": 4,
+        "grade": "A"
+      },
+      {
+        "name": "Database Systems",
+        "code": "CS 186",
+        "credits": 4,
+        "grade": "A-"
+      },
+      {
+        "name": "Software Engineering",
+        "code": "CS 169",
+        "credits": 4,
+        "grade": "A"
+      },
+      {
+        "name": "Web Development",
+        "code": "CS 194",
+        "credits": 3,
+        "grade": "A"
+      },
+      {
+        "name": "Machine Learning",
+        "code": "CS 189",
+        "credits": 4,
+        "grade": "A-"
+      },
+      {
+        "name": "Computer Networks",
+        "code": "CS 168",
+        "credits": 4,
+        "grade": "B+"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Distributed File System",
+        "description": "Built a distributed file system using Java and implemented RAFT consensus algorithm",
+        "technologies": ["Java", "Networking", "Distributed Systems"]
+      },
+      {
+        "name": "Machine Learning Classifier",
+        "description": "Developed a neural network classifier for image recognition with 94% accuracy",
+        "technologies": ["Python", "TensorFlow", "Machine Learning"]
+      }
+    ],
+    "activities": [
+      "Computer Science Student Association - President (2019-2020)",
+      "Berkeley Hackathon Organizing Committee",
+      "Peer Tutoring Program - Volunteer Tutor",
+      "ACM Chapter - Active Member"
+    ]
+  },
+  {
+    "degree": "Certification in Full Stack Web Development",
+    "institution": "FreeCodeCamp",
+    "location": "Online",
+    "duration": "2020",
+    "cgpa": "Certificate of Completion",
+    "description": "Comprehensive program covering modern web development technologies including HTML5, CSS3, JavaScript, React, Node.js, and database management.",
+    "achievements": [
+      "Completed 1,800+ hours of coursework",
+      "Built 10+ full-stack projects",
+      "Contributed to open source projects",
+      "Mentored 5+ fellow students"
+    ],
+    "courses": [
+      {
+        "name": "Responsive Web Design",
+        "code": "RWD",
+        "credits": 300,
+        "completed": true
+      },
+      {
+        "name": "JavaScript Algorithms and Data Structures",
+        "code": "JSAD",
+        "credits": 300,
+        "completed": true
+      },
+      {
+        "name": "Front End Development Libraries",
+        "code": "FEDL",
+        "credits": 300,
+        "completed": true
+      },
+      {
+        "name": "Data Visualization",
+        "code": "DV",
+        "credits": 300,
+        "completed": true
+      },
+      {
+        "name": "Back End Development and APIs",
+        "code": "BEDA",
+        "credits": 300,
+        "completed": true
+      },
+      {
+        "name": "Quality Assurance",
+        "code": "QA",
+        "credits": 300,
+        "completed": true
+      }
+    ],
+    "projects": [
+      {
+        "name": "Personal Library",
+        "description": "Full-stack application for managing personal book collections",
+        "technologies": ["Node.js", "Express", "MongoDB", "React"]
+      },
+      {
+        "name": "Stock Price Checker",
+        "description": "RESTful API for checking stock prices with security features",
+        "technologies": ["Node.js", "API Integration", "Security"]
+      },
+      {
+        "name": "Issue Tracker",
+        "description": "Issue tracking system with CRUD operations and testing",
+        "technologies": ["Node.js", "Express", "MongoDB", "Testing"]
+      }
+    ],
+    "certifications": [
+      "Responsive Web Design Certification",
+      "JavaScript Algorithms and Data Structures Certification",
+      "Front End Development Libraries Certification",
+      "Data Visualization Certification",
+      "Back End Development and APIs Certification",
+      "Quality Assurance Certification"
+    ]
+  }
+]

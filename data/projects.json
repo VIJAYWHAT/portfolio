@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A full-featured e-commerce platform with user authentication, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.",
+    "image": "/images/ecommerce-project.jpg",
+    "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Express", "JWT"],
+    "category": "featured",
+    "liveUrl": "https://ecommerce-demo.johndoe.dev",
+    "githubUrl": "https://github.com/johndoe/ecommerce-platform",
+    "featured": true,
+    "completedAt": "2024-01-15",
+    "challenges": [
+      "Implementing secure payment processing with Stripe",
+      "Building a scalable product catalog with search and filtering",
+      "Creating a responsive admin dashboard for inventory management"
+    ],
+    "outcomes": [
+      "Successfully processed over $100K in transactions",
+      "Achieved 99.9% uptime with optimized server architecture",
+      "Reduced cart abandonment rate by 25% through UX improvements"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "A collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.",
+    "image": "/images/taskapp-project.jpg",
+    "technologies": ["Vue.js", "Socket.io", "PostgreSQL", "Docker", "AWS"],
+    "category": "featured",
+    "liveUrl": "https://taskapp-demo.johndoe.dev",
+    "githubUrl": "https://github.com/johndoe/task-management",
+    "featured": true,
+    "completedAt": "2023-11-20",
+    "challenges": [
+      "Implementing real-time synchronization across multiple users",
+      "Creating an intuitive drag-and-drop interface",
+      "Scaling the application to handle large teams and projects"
+    ],
+    "outcomes": [
+      "Improved team productivity by 35% for beta users",
+      "Successfully handles 1000+ concurrent users",
+      "Achieved 4.8/5 user satisfaction rating"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Weather Dashboard",
+    "description": "A responsive weather dashboard that provides current weather conditions, forecasts, and weather maps using multiple APIs.",
+    "image": "/images/weather-project.jpg",
+    "technologies": ["JavaScript", "HTML5", "CSS3", "OpenWeather API", "Chart.js"],
+    "category": "opensource",
+    "liveUrl": "https://weather-dashboard.johndoe.dev",
+    "githubUrl": "https://github.com/johndoe/weather-dashboard",
+    "featured": false,
+    "completedAt": "2023-08-10",
+    "challenges": [
+      "Integrating multiple weather APIs for comprehensive data",
+      "Creating responsive charts and visualizations",
+      "Implementing location-based weather detection"
+    ],
+    "outcomes": [
+      "Over 10,000 monthly active users",
+      "99.5% API uptime with robust error handling",
+      "Featured in 'Best Weather Apps' article by TechCrunch"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Personal Blog Engine",
+    "description": "A custom-built blog engine with markdown support, SEO optimization, and content management system for technical writing.",
+    "image": "/images/blog-project.jpg",
+    "technologies": ["Next.js", "MDX", "Tailwind CSS", "Vercel", "CMS"],
+    "category": "opensource",
+    "liveUrl": "https://blog.johndoe.dev",
+    "githubUrl": "https://github.com/johndoe/blog-engine",
+    "featured": false,
+    "completedAt": "2023-06-05",
+    "challenges": [
+      "Implementing server-side rendering for optimal SEO",
+      "Creating a flexible content management system",
+      "Optimizing build times for large numbers of blog posts"
+    ],
+    "outcomes": [
+      "Achieved 95+ Google PageSpeed score",
+      "Reduced page load time by 60% compared to previous platform",
+      "Increased organic search traffic by 200%"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Portfolio Website",
+    "description": "My personal portfolio website showcasing my projects, skills, and professional journey. Built with modern web technologies.",
+    "image": "/images/portfolio-project.jpg",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "GSAP", "Responsive Design"],
+    "category": "featured",
+    "liveUrl": "https://johndoe.dev",
+    "githubUrl": "https://github.com/johndoe/portfolio",
+    "featured": true,
+    "completedAt": "2024-02-28",
+    "challenges": [
+      "Creating smooth animations and micro-interactions",
+      "Implementing a responsive design that works across all devices",
+      "Optimizing for accessibility and performance"
+    ],
+    "outcomes": [
+      "Achieved 98% accessibility score",
+      "Increased interview requests by 150%",
+      "Featured in 'Developer Portfolio Inspiration' collection"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "API Rate Limiter",
+    "description": "A flexible and efficient rate limiting middleware for Node.js applications with support for multiple storage backends.",
+    "image": "/images/ratelimiter-project.jpg",
+    "technologies": ["Node.js", "Redis", "Express", "TypeScript", "Testing"],
+    "category": "opensource",
+    "liveUrl": null,
+    "githubUrl": "https://github.com/johndoe/api-rate-limiter",
+    "featured": false,
+    "completedAt": "2023-04-15",
+    "challenges": [
+      "Implementing efficient rate limiting algorithms",
+      "Supporting multiple storage backends (Redis, MongoDB, Memory)",
+      "Ensuring high performance with minimal memory footprint"
+    ],
+    "outcomes": [
+      "Downloaded over 50K times on npm",
+      "Used by 100+ companies in production",
+      "Contributed to by 15+ open source developers"
+    ]
+  }
+]

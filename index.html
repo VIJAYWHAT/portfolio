@@ -1,137 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Full Stack Developer Portfolio</title>
+    <meta name="description" content="John Doe - Full Stack Developer specializing in modern web technologies. View my projects, experience, and blog posts.">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, JavaScript, React, Node.js, Portfolio">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="John Doe - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Full Stack Developer specializing in modern web technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://johndoe.dev">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Hi, I'm <span class="highlight">Vijay Raja</span></h1>
-        <p class="tagline">A passionate open-source Developer specializing in Python.</p>
-        <a href="#about" class="btn">Learn More</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <p>Hello! I'm Vijay Raja, a [Your Profession] with expertise in [Your Skills]. I love building innovative solutions and contributing to open-source projects. Let's create something amazing together!</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <i class="fas fa-code"></i>
-          <h3>Web Development</h3>
-          <p>HTML, CSS, JavaScript, React, Node.js</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="nav-logo-link">JD</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
-        <div class="skill-card">
-          <i class="fas fa-palette"></i>
-          <h3>UI/UX Design</h3>
-          <p>Figma, Adobe XD, Prototyping</p>
-        </div>
-        <div class="skill-card">
-          <i class="fas fa-database"></i>
-          <h3>Database Management</h3>
-          <p>MySQL, MongoDB, Firebase</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Creations Section -->
-  <section id="creations" class="section">
-    <div class="container">
-      <h2>Creations</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="assets/images/project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Description of Project 1.</p>
-          <a href="#" class="btn">View Project</a>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="highlight">John Doe</span>
+                        </h1>
+                        <div class="hero-subtitle">
+                            <span class="typing-text" id="typing-text"></span>
+                        </div>
+                        <p class="hero-description">
+                            I'm a passionate full-stack developer who loves creating beautiful, functional web applications. 
+                            I specialize in modern JavaScript frameworks and have a keen eye for user experience design.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+            <div class="floating-social">
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            I'm a curious developer who believes in the power of technology to solve real-world problems. 
+                            My journey started with a simple "Hello World" program, and it has been an exciting adventure ever since.
+                        </p>
+                        <div class="journey-timeline" id="journey-timeline">
+                            <!-- Timeline items will be loaded here -->
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hobbies-section">
+                    <h3>When I'm not coding</h3>
+                    <div class="hobbies-grid">
+                        <div class="hobby-item">
+                            <i class="fas fa-camera"></i>
+                            <span>Photography</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Gaming</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-book"></i>
+                            <span>Reading</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-hiking"></i>
+                            <span>Hiking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="featured">Featured</button>
+                    <button class="filter-btn" data-filter="opensource">Open Source</button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-categories" id="skills-categories">
+                    <!-- Skills will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-timeline" id="education-timeline">
+                    <!-- Education items will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-timeline" id="experience-timeline">
+                    <!-- Experience items will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title">Blog & Presentations</h2>
+                <div class="blog-filters">
+                    <button class="filter-btn active" data-filter="all">All Posts</button>
+                    <button class="filter-btn" data-filter="blogs">Blog Posts</button>
+                    <button class="filter-btn" data-filter="presentations">Presentations</button>
+                </div>
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Blog posts will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-content">
+                    <div class="resume-preview">
+                        <div class="resume-placeholder">
+                            <i class="fas fa-file-pdf"></i>
+                            <p>Resume Preview</p>
+                        </div>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="assets/resume.pdf" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                        <button class="btn btn-outline" onclick="window.print()">
+                            <i class="fas fa-print"></i> Print
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together!</h3>
+                        <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>john.doe@example.com</span>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>San Francisco, CA</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Doe. All rights reserved. Built with ❤️ and JavaScript.</p>
         </div>
-        <div class="project-card">
-          <img src="assets/images/project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Description of Project 2.</p>
-          <a href="#" class="btn">View Project</a>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loader">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- Open Source Section -->
-  <section id="open-source" class="section">
-    <div class="container">
-      <h2>Open Source</h2>
-      <div class="open-source-content">
-        <p>I actively contribute to open-source projects. Here are some of my contributions:</p>
-        <ul>
-          <li><a href="#">Project 1</a></li>
-          <li><a href="#">Project 2</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Job Title - Company</h3>
-          <p class="date">Jan 2022 - Present</p>
-          <p>Description of your role and achievements.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Job Title - Company</h3>
-          <p class="date">Jan 2020 - Dec 2021</p>
-          <p>Description of your role and achievements.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>Degree - University</h3>
-        <p class="date">2016 - 2020</p>
-        <p>Description of your education.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="scripts/data.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
