@@ -5,7 +5,7 @@ class PortfolioApp {
         this.currentTheme = 'dark';
         this.isLoading = false;
         this.activeSection = 'home';
-        this.typingText = ['Full Stack Developer', 'UI/UX Designer', 'Problem Solver', 'Tech Enthusiast'];
+        this.typingText = ['Full Stack Developer', 'Open-Source Contributor', 'Problem Solver', 'Tech Enthusiast'];
         this.currentTypeIndex = 0;
         this.currentCharIndex = 0;
         this.isDeleting = false;

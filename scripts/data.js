@@ -2,7 +2,7 @@
 window.portfolioData = {
     // Personal information
     personal: {
-        name: "John Doe",
+        name: "Vijay Raja",
         title: "Full Stack Developer",
         email: "john.doe@example.com",
         phone: "+1 (555) 123-4567",

@@ -63,7 +63,7 @@ class DetailPageManager {
         }
 
         // Update page title
-        document.title = `${this.currentItem.title} - John Doe Portfolio`;
+        document.title = `${this.currentItem.title} - Vijay Raja Portfolio`;
     }
 
     renderProjectDetails(container) {
@@ -666,10 +666,10 @@ Write comprehensive tests for your components using React Testing Library:
 
 \`\`\`jsx
 test('UserProfile displays user information correctly', () => {
-  const mockUser = { name: 'John Doe', email: 'john@example.com' };
+  const mockUser = { name: 'Vijay Raja', email: 'john@example.com' };
   render(<UserProfile user={mockUser} />);
   
-  expect(screen.getByText('John Doe')).toBeInTheDocument();
+  expect(screen.getByText('Vijay Raja')).toBeInTheDocument();
   expect(screen.getByText('john@example.com')).toBeInTheDocument();
 });
 \`\`\`
@@ -1775,7 +1775,7 @@ import UserCard from './UserCard';
 
 const mockUser: User = {
   id: 1,
-  name: 'John Doe',
+  name: 'Vijay Raja',
   email: 'john@example.com',
   isActive: true
 };
@@ -1795,7 +1795,7 @@ describe('UserCard', () => {
       />
     );
 
-    expect(screen.getByText('John Doe')).toBeInTheDocument();
+    expect(screen.getByText('Vijay Raja')).toBeInTheDocument();
     expect(screen.getByText('john@example.com')).toBeInTheDocument();
   });
 

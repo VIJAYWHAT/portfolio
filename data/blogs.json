@@ -18,7 +18,7 @@
     "likes": 89,
     "comments": 23,
     "author": {
-      "name": "John Doe",
+      "name": "Vijay Raja",
       "email": "john.doe@example.com",
       "avatar": "/images/author.jpg"
     },
@@ -48,7 +48,7 @@
     "likes": 156,
     "comments": 45,
     "author": {
-      "name": "John Doe",
+      "name": "Vijay Raja",
       "email": "john.doe@example.com",
       "avatar": "/images/author.jpg"
     },
@@ -78,7 +78,7 @@
     "likes": 67,
     "comments": 18,
     "author": {
-      "name": "John Doe",
+      "name": "Vijay Raja",
       "email": "john.doe@example.com",
       "avatar": "/images/author.jpg"
     },
@@ -107,7 +107,7 @@
     "likes": 98,
     "comments": 32,
     "author": {
-      "name": "John Doe",
+      "name": "Vijay Raja",
       "email": "john.doe@example.com",
       "avatar": "/images/author.jpg"
     }
@@ -131,7 +131,7 @@
     "likes": 134,
     "comments": 56,
     "author": {
-      "name": "John Doe",
+      "name": "Vijay Raja",
       "email": "john.doe@example.com",
       "avatar": "/images/author.jpg"
     }
