@@ -5,7 +5,7 @@ class PortfolioApp {
         this.currentTheme = 'dark';
         this.isLoading = false;
         this.activeSection = 'home';
-        this.typingText = ['Full Stack Developer', 'Open-Source Contributor', 'Problem Solver', 'Tech Enthusiast'];
+        this.typingText = ['Full Stack Developer', 'UI/UX Designer', 'Problem Solver', 'Tech Enthusiast'];
         this.currentTypeIndex = 0;
         this.currentCharIndex = 0;
         this.isDeleting = false;
@@ -246,16 +246,20 @@ class PortfolioApp {
         try {
             const skills = window.portfolioData.skills;
             
-            container.innerHTML = Object.entries(skills).map(([category, skillList]) => `
-                <div class="skill-category">
-                    <h3>${category}</h3>
-                    <div class="skills-list">
-                        ${skillList.map(skill => `
-                            <span class="skill-tag">${skill}</span>
-                        `).join('')}
-                    </div>
+            container.innerHTML = `
+                <div class="space-y-10">
+                    ${Object.entries(skills).map(([category, skillList]) => `
+                        <div class="skill-category">
+                            <h3>${category}</h3>
+                            <div class="skills-list">
+                                ${skillList.map(skill => `
+                                    <span class="skill-tag">${skill}</span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
                 </div>
-            `).join('');
+            `;
         } catch (error) {
             console.error('Error loading skills:', error);
         }
