@@ -217,7 +217,7 @@ a:hover {
 
 /* Sections */
 .section {
-  padding: var(--spacing-3xl) 0;
+  padding: var(--spacing-xl) 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -504,6 +504,7 @@ a:hover {
   border-radius: var(--radius-lg);
   text-align: center;
   transition: all var(--transition-normal);
+  font-size: 1.125rem;
 }
 
 .hobby-item:hover {
@@ -513,8 +514,7 @@ a:hover {
 }
 
 .hobby-item i {
-  font-size: 2rem;
-  margin-bottom: var(--spacing-sm);
+  font-size: 1.5rem;
 }
 
 /* Filters */
@@ -641,7 +641,7 @@ a:hover {
 .skills-categories {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--spacing-3xl) 0;
+  padding: var(--spacing-xl) 0;
 }
 
 .skills-categories .space-y-10 > * + * {
@@ -649,7 +649,7 @@ a:hover {
 }
 
 .skill-category {
-  margin-bottom: var(--spacing-2xl);
+  margin-bottom: var(--spacing-md);
 }
 
 .skill-category h3 {
@@ -758,8 +758,8 @@ a:hover {
   color: var(--text-secondary);
 }
 
-.entry-description {
-  margin-bottom: var(--spacing-md);
+.entry-description p{
+  margin-bottom: 0;
 }
 
 .entry-responsibilities {

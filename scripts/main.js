@@ -282,14 +282,7 @@ class PortfolioApp {
                         <div class="entry-duration">${edu.duration}</div>
                     </div>
                     <div class="entry-description">
-                        <p><strong>CGPA:</strong> ${edu.cgpa}</p>
                         <p>${edu.description}</p>
-                        ${edu.achievements ? `
-                            <h4>Achievements:</h4>
-                            <ul class="entry-responsibilities">
-                                ${edu.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
-                            </ul>
-                        ` : ''}
                     </div>
                 </div>
             `).join('');

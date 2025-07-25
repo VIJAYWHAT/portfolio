@@ -175,41 +175,16 @@ window.portfolioData = {
     // Educational background
     education: [
         {
-            degree: "Bachelor of Science in Computer Science",
-            institution: "University of California, Berkeley",
-            location: "Berkeley, CA",
-            duration: "2016 - 2020",
-            cgpa: "3.8/4.0",
-            description: "Focused on software engineering, algorithms, and data structures. Completed coursework in web development, database systems, and machine learning.",
-            achievements: [
-                "Dean's List for 6 consecutive semesters",
-                "President of Computer Science Student Association",
-                "Winner of Annual Hackathon (2019)",
-                "Teaching Assistant for Data Structures course",
-                "Graduated Magna Cum Laude"
-            ],
-            courses: [
-                "Data Structures and Algorithms",
-                "Database Systems",
-                "Software Engineering",
-                "Web Development",
-                "Machine Learning",
-                "Computer Networks"
-            ]
+            degree: "Upto HSLC",
+            institution: "Government higher secondary school, Irumeni",
+            duration: "2016 - 2023",
+            description: ""  
         },
         {
-            degree: "Certification in Full Stack Web Development",
-            institution: "FreeCodeCamp",
-            location: "Online",
-            duration: "2020",
-            cgpa: "Certificate of Completion",
-            description: "Comprehensive program covering modern web development technologies including HTML5, CSS3, JavaScript, React, Node.js, and database management.",
-            achievements: [
-                "Completed 1,800+ hours of coursework",
-                "Built 10+ full-stack projects",
-                "Contributed to open source projects",
-                "Mentored 5+ fellow students"
-            ]
+             degree: "Bachelor of Science",
+            institution: "SRMV College of arts and science, Coimbatore",
+            duration: "2023 - 2026",
+            description: "Specialization in Computer Science",
         }
     ],
 
