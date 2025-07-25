@@ -2,31 +2,18 @@
   {
     "degree": "Government higher secondary school, Irumeni",
     "institution": "Government higher secondary school",
-    "location": "Irumeni, Ramanathapuram",
     "duration": "2016 - 2020",
     "cgpa": "3.8/4.0",
-    "description": "Focused on software engineering, algorithms, and data structures. Completed coursework in web development, database systems, and machine learning.",
-    "achievements": [
-      "Dean's List for 6 consecutive semesters",
-      "President of Computer Science Student Association",
-      "Winner of Annual Hackathon (2019)",
-      "Teaching Assistant for Data Structures course",
-      "Graduated Magna Cum Laude"
-    ]  
+    "description": "Focused on software engineering, algorithms, and data structures. Completed coursework in web development, database systems, and machine learning."
+   
   },
   {
     "degree": "Certification in Full Stack Web Development",
     "institution": "FreeCodeCamp",
-    "location": "Online",
     "duration": "2020",
     "cgpa": "Certificate of Completion",
-    "description": "Comprehensive program covering modern web development technologies including HTML5, CSS3, JavaScript, React, Node.js, and database management.",
-    "achievements": [
-      "Completed 1,800+ hours of coursework",
-      "Built 10+ full-stack projects",
-      "Contributed to open source projects",
-      "Mentored 5+ fellow students"
-    ]
+    "description": "Comprehensive program covering modern web development technologies including HTML5, CSS3, JavaScript, React, Node.js, and database management."
+   
     
   }
 ]
