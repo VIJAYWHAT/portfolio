@@ -431,7 +431,6 @@ class PortfolioApp {
         try {
             // Simulate form submission (replace with actual API call)
             await new Promise(resolve => setTimeout(resolve, 2000));
-            
             // Show success message
             this.showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
             form.reset();
