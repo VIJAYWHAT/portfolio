@@ -1,0 +1,630 @@
+/**
+ * Enhanced Portfolio Contact Form Handler
+ * By Vijay Raja - Open Source Contributor & Full-Stack Developer
+ */
+function doPost(e) {
+  
+  var SPREADSHEET_ID = 'YOUR_SPREADSHEET_ID_HERE';  // Replace with YOUR Google Sheet ID
+  var YOUR_EMAIL = 'vijay@example.com';  // Replace with YOUR email address
+  var YOUR_NAME = 'Vijay Raja';
+  var PORTFOLIO_URL = 'https://vijay-portfolio.com'; // Replace with your portfolio URL
+  var GITHUB_URL = 'https://github.com/vijay-raja'; // Replace with your GitHub URL
+
+  try {
+    // Connect to Google Sheet
+    var ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+    var sheet = ss.getSheetByName('Sheet1');
+
+    // Extract form data
+    var name = e.parameter.name || '';
+    var email = e.parameter.email || '';
+    var subject = e.parameter.subject || 'General Inquiry';
+    var message = e.parameter.message || '';
+    var company = e.parameter.company || '';
+    var projectType = e.parameter.projectType || 'Not specified';
+
+    // Validate required fields
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      return ContentService.createTextOutput("All required fields must be filled!");
+    }
+
+    // Store data in Google Sheet with additional columns
+    sheet.appendRow([
+      new Date(),
+      name.trim(),
+      email.trim(),
+      company.trim(),
+      subject.trim(),
+      projectType.trim(),
+      message.trim(),
+      'New'  // Status column
+    ]);
+
+    // Send Thank You Email to Visitor
+    var visitorSubject = "Thanks for connecting! Let's build something amazing 🚀";
+    var visitorBody = createTechVisitorEmailTemplate(name, message, company, projectType);
+    
+    MailApp.sendEmail({
+      to: email,
+      subject: visitorSubject,
+      htmlBody: visitorBody
+    });
+
+    // Send Notification Email to You
+    var ownerSubject = `🔥 New Lead: ${subject} - ${name}`;
+    var ownerBody = createTechOwnerEmailTemplate(name, email, subject, message, company, projectType, SPREADSHEET_ID);
+    
+    MailApp.sendEmail({
+      to: YOUR_EMAIL,
+      subject: ownerSubject,
+      htmlBody: ownerBody
+    });
+
+    return ContentService.createTextOutput("Message delivered successfully! Expect a response within 24 hours ⚡");
+
+  } catch (error) {
+    console.error('Contact form error:', error);
+    return ContentService.createTextOutput("System error detected. Please retry or reach out directly via email.");
+  }
+}
+
+/**
+ * Modern Tech-Style Thank You Email Template for Visitors
+ */
+function createTechVisitorEmailTemplate(name, message, company, projectType) {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Message Received - Vijay Raja</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { 
+                font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+                line-height: 1.6; 
+                color: #e4e6ea; 
+                background: #0d1117;
+            }
+            .container { 
+                max-width: 650px; 
+                margin: 0 auto; 
+                background: #0d1117;
+            }
+            .header { 
+                background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #020617 100%);
+                padding: 40px 30px; 
+                text-align: center;
+                border-radius: 12px 12px 0 0;
+                border: 1px solid #30363d;
+                position: relative;
+                overflow: hidden;
+            }
+            .header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background: linear-gradient(90deg, #00d4aa, #00a8ff, #a855f7, #ec4899);
+            }
+            .header h1 { 
+                color: #f0f6fc; 
+                font-size: 28px; 
+                font-weight: 700;
+                margin-bottom: 10px;
+                background: linear-gradient(135deg, #00d4aa, #00a8ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .header .subtitle { 
+                color: #8b949e; 
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .content { 
+                background: #161b22; 
+                padding: 40px 30px; 
+                border: 1px solid #30363d;
+                border-top: none;
+            }
+            .greeting { 
+                font-size: 18px; 
+                color: #f0f6fc; 
+                margin-bottom: 20px;
+            }
+            .message-preview {
+                background: #0d1117;
+                border: 1px solid #30363d;
+                border-left: 3px solid #00d4aa;
+                padding: 20px;
+                margin: 25px 0;
+                border-radius: 6px;
+                position: relative;
+            }
+            .message-preview::before {
+                content: '💬';
+                position: absolute;
+                top: -8px;
+                left: 15px;
+                background: #161b22;
+                padding: 0 8px;
+                font-size: 14px;
+            }
+            .tech-stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin: 25px 0;
+            }
+            .tech-badge {
+                background: linear-gradient(135deg, #1e293b, #334155);
+                color: #00d4aa;
+                padding: 6px 12px;
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: 600;
+                border: 1px solid #30363d;
+            }
+            .cta-section {
+                background: #0d1117;
+                padding: 25px;
+                border: 1px solid #30363d;
+                border-radius: 8px;
+                margin: 25px 0;
+                text-align: center;
+            }
+            .btn {
+                display: inline-block;
+                background: linear-gradient(135deg, #00d4aa, #00a8ff);
+                color: #000 !important;
+                padding: 12px 24px;
+                text-decoration: none;
+                border-radius: 25px;
+                font-weight: 600;
+                margin: 8px;
+                transition: transform 0.2s;
+                font-size: 14px;
+            }
+            .btn:hover { transform: translateY(-2px); }
+            .btn.secondary {
+                background: transparent;
+                border: 1px solid #30363d;
+                color: #00d4aa !important;
+            }
+            .footer { 
+                background: #0d1117; 
+                padding: 30px; 
+                text-align: center; 
+                border: 1px solid #30363d;
+                border-top: none;
+                border-radius: 0 0 12px 12px;
+            }
+            .footer p { 
+                color: #8b949e; 
+                font-size: 14px; 
+                margin: 8px 0;
+            }
+            .social-links {
+                margin: 20px 0;
+            }
+            .social-links a {
+                color: #8b949e;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 14px;
+                transition: color 0.2s;
+            }
+            .social-links a:hover { color: #00d4aa; }
+            .code-block {
+                background: #0d1117;
+                border: 1px solid #30363d;
+                padding: 15px;
+                border-radius: 6px;
+                font-family: 'Monaco', 'Consolas', monospace;
+                font-size: 13px;
+                color: #f0f6fc;
+                margin: 20px 0;
+            }
+            .status-indicator {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                color: #00d4aa;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .pulse { 
+                width: 8px; 
+                height: 8px; 
+                background: #00d4aa; 
+                border-radius: 50%; 
+                animation: pulse 2s infinite;
+            }
+            @keyframes pulse {
+                0% { opacity: 1; transform: scale(1); }
+                50% { opacity: 0.7; transform: scale(1.1); }
+                100% { opacity: 1; transform: scale(1); }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Message Successfully Received!</h1>
+                <p class="subtitle">Open Source Contributor & Full-Stack Developer</p>
+            </div>
+            
+            <div class="content">
+                <div class="greeting">
+                    Hello <strong style="color: #00d4aa;">${name}</strong> 👋
+                    ${company ? `from <strong style="color: #00a8ff;">${company}</strong>` : ''}
+                </div>
+                
+                <p style="color: #c9d1d9; margin-bottom: 20px;">
+                    Thanks for reaching out! Your message has been successfully processed and added to my priority queue.
+                </p>
+
+                <div class="status-indicator">
+                    <div class="pulse"></div>
+                    Status: Message delivered and queued for review
+                </div>
+                
+                <div class="message-preview">
+                    <strong style="color: #f0f6fc;">Your Message Preview:</strong><br>
+                    <em style="color: #8b949e;">"${message.length > 150 ? message.substring(0, 150) + '...' : message}"</em>
+                    ${projectType !== 'Not specified' ? `<br><br><strong style="color: #00d4aa;">Project Type:</strong> ${projectType}` : ''}
+                </div>
+
+                <div class="code-block">
+                    <span style="color: #ff7b72;">const</span> <span style="color: #f0f6fc;">responseTime</span> = <span style="color: #a5d6ff;">"24-48 hours"</span>;<br>
+                    <span style="color: #ff7b72;">const</span> <span style="color: #f0f6fc;">priority</span> = <span style="color: #a5d6ff;">"high"</span>;<br>
+                    <span style="color: #ff7b72;">const</span> <span style="color: #f0f6fc;">status</span> = <span style="color: #a5d6ff;">"processing"</span>;
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-badge">C/C++</span>
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">R&D</span>
+                    <span class="tech-badge">POC Development</span>
+                    <span class="tech-badge">Open Source</span>
+                </div>
+                
+                <div class="cta-section">
+                    <p style="color: #c9d1d9; margin-bottom: 20px;">
+                        While you wait, feel free to explore my work:
+                    </p>
+                    <a href="https://vijay-portfolio.com" class="btn">View Portfolio</a>
+                    <a href="https://github.com/vijay-raja" class="btn secondary">GitHub Projects</a>
+                </div>
+
+                <p style="color: #c9d1d9; margin-top: 25px;">
+                    Looking forward to discussing your project and exploring how we can build something amazing together! 🚀
+                </p>
+                
+                <p style="color: #8b949e; margin-top: 20px; font-size: 14px; font-style: italic;">
+                    Best regards,<br>
+                    <strong style="color: #f0f6fc;">Vijay Raja</strong><br>
+                    <span style="color: #00d4aa;">Full-Stack Developer & Open Source Contributor</span>
+                </p>
+            </div>
+            
+            <div class="footer">
+                <div class="social-links">
+                    <a href="https://github.com/vijay-raja">GitHub</a>
+                    <a href="https://linkedin.com/in/vijay-raja">LinkedIn</a>
+                    <a href="https://vijay-portfolio.com">Portfolio</a>
+                </div>
+                <p>🤖 This email was automatically generated by my contact system</p>
+                <p>Please don't reply to this email - I'll respond from my personal email soon!</p>
+                <p style="font-size: 12px; margin-top: 15px;">
+                    Specializing in C, Java, Python | R&D | POC Development | Open Source
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>
+  `;
+}
+
+/**
+ * Modern Tech-Style Owner Notification Email Template
+ */
+function createTechOwnerEmailTemplate(name, email, subject, message, company, projectType, sheetId) {
+  return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Contact - Dashboard Alert</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { 
+                font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+                line-height: 1.6; 
+                color: #e4e6ea; 
+                background: #0d1117;
+            }
+            .container { 
+                max-width: 700px; 
+                margin: 0 auto; 
+                background: #0d1117;
+            }
+            .alert-header { 
+                background: linear-gradient(135deg, #dc2626, #ef4444);
+                padding: 25px 30px; 
+                text-align: center;
+                border-radius: 12px 12px 0 0;
+                position: relative;
+                overflow: hidden;
+            }
+            .alert-header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #dc2626, #f59e0b, #10b981, #3b82f6, #8b5cf6);
+                animation: rainbow 3s linear infinite;
+            }
+            @keyframes rainbow {
+                0% { transform: translateX(-100%); }
+                100% { transform: translateX(100%); }
+            }
+            .alert-header h1 { 
+                color: #fff; 
+                font-size: 24px; 
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            .alert-header .subtitle { 
+                color: rgba(255,255,255,0.9); 
+                font-size: 14px;
+            }
+            .content { 
+                background: #161b22; 
+                padding: 30px; 
+                border: 1px solid #30363d;
+                border-top: none;
+            }
+            .priority-banner {
+                background: linear-gradient(135deg, #dc2626, #b91c1c);
+                color: #fff;
+                padding: 15px;
+                border-radius: 8px;
+                text-align: center;
+                font-weight: 600;
+                margin-bottom: 25px;
+                animation: glow 2s ease-in-out infinite alternate;
+            }
+            @keyframes glow {
+                from { box-shadow: 0 0 5px rgba(220, 38, 38, 0.5); }
+                to { box-shadow: 0 0 20px rgba(220, 38, 38, 0.8); }
+            }
+            .contact-card {
+                background: #0d1117;
+                border: 1px solid #30363d;
+                border-radius: 10px;
+                padding: 25px;
+                margin: 20px 0;
+            }
+            .contact-info {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+                margin-bottom: 20px;
+            }
+            .info-item {
+                background: #161b22;
+                padding: 15px;
+                border: 1px solid #30363d;
+                border-radius: 6px;
+                border-left: 3px solid #00d4aa;
+            }
+            .info-item .label {
+                color: #8b949e;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+            }
+            .info-item .value {
+                color: #f0f6fc;
+                font-size: 16px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+            .message-section {
+                background: #0d1117;
+                border: 1px solid #30363d;
+                border-left: 4px solid #f59e0b;
+                padding: 20px;
+                border-radius: 8px;
+                margin: 25px 0;
+            }
+            .message-section h3 {
+                color: #f0f6fc;
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .message-text {
+                background: #161b22;
+                padding: 20px;
+                border-radius: 6px;
+                color: #c9d1d9;
+                line-height: 1.7;
+                border: 1px solid #30363d;
+            }
+            .action-buttons {
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                margin: 30px 0;
+                flex-wrap: wrap;
+            }
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 12px 20px;
+                text-decoration: none;
+                border-radius: 25px;
+                font-weight: 600;
+                font-size: 14px;
+                transition: all 0.2s;
+            }
+            .btn.primary {
+                background: linear-gradient(135deg, #00d4aa, #00a8ff);
+                color: #000 !important;
+            }
+            .btn.secondary {
+                background: linear-gradient(135deg, #6366f1, #8b5cf6);
+                color: #fff !important;
+            }
+            .btn.danger {
+                background: linear-gradient(135deg, #ef4444, #dc2626);
+                color: #fff !important;
+            }
+            .btn:hover { transform: translateY(-2px); }
+            .stats-section {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+                margin: 25px 0;
+            }
+            .stat-card {
+                background: linear-gradient(135deg, #1e293b, #334155);
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+                border: 1px solid #30363d;
+            }
+            .stat-number {
+                font-size: 24px;
+                font-weight: 700;
+                color: #00d4aa;
+            }
+            .stat-label {
+                color: #8b949e;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+            .footer { 
+                background: #0d1117; 
+                padding: 25px; 
+                text-align: center; 
+                border: 1px solid #30363d;
+                border-top: none;
+                border-radius: 0 0 12px 12px;
+            }
+            .footer p { 
+                color: #8b949e; 
+                font-size: 13px; 
+                margin: 5px 0;
+            }
+            .timestamp {
+                color: #6b7280;
+                font-size: 12px;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="alert-header">
+                <h1>🚨 New Contact Alert!</h1>
+                <p class="subtitle">Portfolio Dashboard Notification</p>
+            </div>
+            
+            <div class="content">
+                <div class="priority-banner">
+                    ⚡ HIGH PRIORITY LEAD DETECTED ⚡
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="label">👤 Contact Name</div>
+                            <div class="value">${name}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">📧 Email Address</div>
+                            <div class="value">
+                                <a href="mailto:${email}" style="color: #00a8ff; text-decoration: none;">${email}</a>
+                            </div>
+                        </div>
+                        ${company ? `
+                        <div class="info-item">
+                            <div class="label">🏢 Company</div>
+                            <div class="value">${company}</div>
+                        </div>
+                        ` : ''}
+                        <div class="info-item">
+                            <div class="label">📝 Subject</div>
+                            <div class="value">${subject}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">🎯 Project Type</div>
+                            <div class="value">${projectType}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">⏰ Timestamp</div>
+                            <div class="value timestamp">${new Date().toLocaleString()}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-section">
+                    <h3>💬 Message Content:</h3>
+                    <div class="message-text">${message}</div>
+                </div>
+
+                <div class="stats-section">
+                    <div class="stat-card">
+                        <div class="stat-number">${new Date().getDate()}</div>
+                        <div class="stat-label">Day of Month</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${new Date().getHours()}:${String(new Date().getMinutes()).padStart(2, '0')}</div>
+                        <div class="stat-label">Time Received</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${message.length}</div>
+                        <div class="stat-label">Characters</div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="mailto:${email}?subject=Re: ${subject}&body=Hi ${name},%0D%0A%0D%0AThank you for reaching out through my portfolio!%0D%0A%0D%0A" class="btn primary">
+                        📧 Reply Now
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/${sheetId}" class="btn secondary">
+                        📊 View Dashboard
+                    </a>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Follow up: ${name}&details=Follow up on portfolio inquiry from ${name} (${email})" class="btn danger">
+                        📅 Schedule Follow-up
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="footer">
+                <p>🤖 <strong>Automated Portfolio System</strong> | Vijay Raja</p>
+                <p>All inquiries are logged in your <a href="https://docs.google.com/spreadsheets/d/${sheetId}" style="color: #00d4aa;">Google Sheet Dashboard</a></p>
+                <p style="margin-top: 15px; font-size: 11px;">
+                    System Status: ✅ Active | Last Update: ${new Date().toISOString().split('T')[0]}
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>
+  `;
+}

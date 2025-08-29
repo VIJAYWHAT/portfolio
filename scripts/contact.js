@@ -49,7 +49,7 @@ form.addEventListener("submit", function (e) {
   const data = new URLSearchParams(formData);
 
   fetch(
-    "https://script.google.com/macros/s/AKfycbxG9TWPAJabJtPD93UEqu5t1l8b_uEHwwioCaMAK7p2iNFpfInrpCjGg6pWGmPPamcq/exec",
+    "https://script.google.com/macros/s/AKfycbzlaxa0XyOCg_kLSRvj6vm-xtHUkEgG4d-5Ith1wuop1CgmaPH-bp-RiJjh5Rc1mX-O/exec",
     {
       method: "POST",
       body: data,
